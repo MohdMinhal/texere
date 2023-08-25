@@ -12,9 +12,9 @@ pip install texere
 
 # Usage: 
 ```
-from texere.txt_function import remove_text
+from texere.purge import txt
 
-modified_image, mask = remove_text('image_path.jpg')
+modified_image, mask = txt('image_path.jpg')
 
 # 'modified_image' contains the image with text removed
 # 'mask' is a binary image indicating the regions where text was removed
@@ -23,10 +23,10 @@ modified_image, mask = remove_text('image_path.jpg')
 
 # Example:
 ```
-from texere.txt_function import remove_text
+from texere.purge import txt
 
 # Replace 'input_image.jpg' with the path to your input image
-modified_image, mask = remove_text('input_image.jpg')
+modified_image, mask = txt('input_image.jpg')
 
 # Save the modified image
 cv2.imwrite('output_image.jpg', modified_image)
