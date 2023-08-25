@@ -38,12 +38,15 @@ marked_image = mark('image_path.jpg',threshold)
 from texere.purge import txt
 
 # Replace 'input_image.jpg' with the path to your input image
-modified_image, mask = txt('input_image.jpg',pixels,threshold)
+modified_image, mask = txt('input_image.jpg',7,10)
 
+#threshold value is from 0-100
+#pixels value >0
+#depending on these two value the image will turn out Good 
 # Save the modified image
 cv2.imwrite('output_image.jpg', modified_image)
 
-# Save the mask as a binary image
+# Save the mask as a binary image its a grayscaled image so it can be used for impainting the text area
 cv2.imwrite('mask_image.jpg', mask)
 ```
 
@@ -53,7 +56,7 @@ from texere.edges import mark
 
 # Replace 'input_image.jpg' with the path to your input image
 marked_image = mark('input_image.jpg',threshold)
-
+#threshold value can be between 0-255 also images i tried on works best with 70 
 # Save the marked image
 marked_image.save('marked_image.jpg')
 ```
