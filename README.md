@@ -6,11 +6,11 @@ Texere is a Python package that provides functionality for removing text from im
 
 You can install Texere using pip:
 
-```bash
+```
 pip install texere
+```
 
 #Usage: 
-```bash
 from texere.txt_function import remove_text
 
 modified_image, mask = remove_text('image_path.jpg')
@@ -20,7 +20,6 @@ modified_image, mask = remove_text('image_path.jpg')
 # Further processing using the 'mask' image can be done here
 
 #Example:
-```bash
 from texere.txt_function import remove_text
 
 # Replace 'input_image.jpg' with the path to your input image
