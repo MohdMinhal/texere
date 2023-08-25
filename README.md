@@ -34,8 +34,8 @@ cv2.imwrite('output_image.jpg', modified_image)
 # Save the mask as a binary image
 cv2.imwrite('mask_image.jpg', mask)
 ```
-#Contributing:
+##Contributing:
 Contributions to Texere are welcome! If you have ideas for improvements, bug fixes, or new features, feel free to open an issue or submit a pull request on GitHub.
 
-#License:
+##License:
 This project is licensed under the MIT License - see the LICENSE file for details.
