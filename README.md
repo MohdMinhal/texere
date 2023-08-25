@@ -1,6 +1,5 @@
 # Texere: This is the start of a new Module
-Currently it has two function 1.Text Removal from Images and generate mask 
-2.Marking Edges in Images
+Currently it has two function 1.Text Removal from Images and generate mask 2.Marking Edges in Images
 
 Texere is a Python package that provides functionality for removing text from images and marking edges, along with the option to generate a mask for further processing.
 
